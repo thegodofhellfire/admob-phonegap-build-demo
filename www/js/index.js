@@ -149,14 +149,16 @@ var app = {
     // App buttons functionality
     // -----------------------------------
     startBannerAds: function () {
-        if (window.admob) {
-            app.showProgress(true);
-            window.admob.createBannerView(function () { }, function (e) {
-                alert(JSON.stringify(e));
-            });
-        } else {
-            alert('cordova-admob plugin not ready.\nAre you in a desktop browser4? It won\'t work...');
-        }
+        var flag=0;
+        while (flag==0) 
+            if (window.admob) {
+                app.showProgress(true);
+                window.admob.createBannerView(function () { }, function (e) {
+                    alert(JSON.stringify(e));
+                });
+                flag = 1;
+            }
+        } 
     },
     removeBannerAds: function () {
         if (window.admob) {
