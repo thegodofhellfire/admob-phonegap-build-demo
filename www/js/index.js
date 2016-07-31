@@ -149,16 +149,13 @@ var app = {
     // App buttons functionality
     // -----------------------------------
     startBannerAds: function () {
-        var flag=0;
-        while (flag==0) 
             if (window.admob) {
                 app.showProgress(true);
                 window.admob.createBannerView(function () { }, function (e) {
                     alert(JSON.stringify(e));
                 });
-                flag = 1;
             }
-        } 
+        
     },
     removeBannerAds: function () {
         if (window.admob) {
