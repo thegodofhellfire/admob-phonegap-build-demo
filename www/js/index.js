@@ -76,7 +76,7 @@ var app = {
                 autoShowInterstitial: false // auto show interstitials ad when loaded
             });
         } else {
-            alert('cordova-admob plugin not ready.\nAre you in a desktop browser? It won\'t work...');
+            alert('cordova-admob plugin not ready.\nAre you in a desktop browser1? It won\'t work...');
         }
     },
     // Bind Event Listeners
@@ -90,7 +90,7 @@ var app = {
             document.addEventListener(admob.events.onAdLeftApplication, function (e) { }, false);
             document.addEventListener(admob.events.onInAppPurchaseRequested, function (e) { }, false);
         } else {
-            alert('cordova-admob plugin not ready.\nAre you in a desktop browser? It won\'t work...');
+            alert('cordova-admob plugin not ready.\nAre you in a desktop browser2? It won\'t work...');
         }
     },
 
@@ -123,7 +123,7 @@ var app = {
             console.log('Initializing ads...');
             app.initAds();
         } else {
-            alert('cordova-admob plugin not ready.\nAre you in a desktop browser? It won\'t work...');
+            alert('cordova-admob plugin not ready.\nAre you in a desktop browser3? It won\'t work...');
         }
     },
     onAdLoaded: function (e) {
@@ -155,7 +155,7 @@ var app = {
                 alert(JSON.stringify(e));
             });
         } else {
-            alert('cordova-admob plugin not ready.\nAre you in a desktop browser? It won\'t work...');
+            alert('cordova-admob plugin not ready.\nAre you in a desktop browser4? It won\'t work...');
         }
     },
     removeBannerAds: function () {
@@ -163,7 +163,7 @@ var app = {
             app.showProgress(false);
             window.admob.destroyBannerView();
         } else {
-            alert('cordova-admob plugin not ready.\nAre you in a desktop browser? It won\'t work...');
+            alert('cordova-admob plugin not ready.\nAre you in a desktop browser5? It won\'t work...');
         }
     },
     showBannerAds: function () {
@@ -173,7 +173,7 @@ var app = {
                 alert(JSON.stringify(e));
             });
         } else {
-            alert('cordova-admob plugin not ready.\nAre you in a desktop browser? It won\'t work...');
+            alert('cordova-admob plugin not ready.\nAre you in a desktop browser6? It won\'t work...');
         }
     },
     hideBannerAds: function () {
@@ -181,7 +181,7 @@ var app = {
             app.showProgress(false);
             window.admob.showBannerAd(false);
         } else {
-            alert('cordova-admob plugin not ready.\nAre you in a desktop browser? It won\'t work...');
+            alert('cordova-admob plugin not ready.\nAre you in a desktop browser7? It won\'t work...');
         }
     },
     requestInterstitial: function (autoshow) {
@@ -192,7 +192,7 @@ var app = {
                 alert(JSON.stringify(e));
             });
         } else {
-            alert('cordova-admob plugin not ready.\nAre you in a desktop browser? It won\'t work...');
+            alert('cordova-admob plugin not ready.\nAre you in a desktop browser8? It won\'t work...');
         }
     },
     showInterstitial: function () {
@@ -202,7 +202,7 @@ var app = {
                 alert(JSON.stringify(e));
             });
         } else {
-            alert('cordova-admob plugin not ready.\nAre you in a desktop browser? It won\'t work...');
+            alert('cordova-admob plugin not ready.\nAre you in a desktop browser9? It won\'t work...');
         }
     },
     showProgress: function (show) {
