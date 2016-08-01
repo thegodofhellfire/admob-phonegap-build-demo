@@ -126,7 +126,7 @@ var app = {
     // -----------------------------------
     startBannerAds: function () {
             if (window.admob) {
-                app.showProgress(true);
+                app.showProgress(false);
                 window.admob.createBannerView(function () { }, function (e) {
                     alert(JSON.stringify(e));
                 });
