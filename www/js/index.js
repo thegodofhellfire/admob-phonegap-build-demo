@@ -149,7 +149,6 @@ var app = {
     // App buttons functionality
     // -----------------------------------
     startBannerAds: function () {
-            app.initialize();
             if (window.admob) {
                 app.showProgress(true);
                 window.admob.createBannerView(function () { }, function (e) {
